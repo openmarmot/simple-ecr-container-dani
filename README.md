@@ -13,3 +13,5 @@ When I am doing some quick testing with Kubernetes or Docker I often need a smal
 
 ### Kubernetes Deploy
 - k3s/kubectl-apply.sh is a simple deployment aimed at a k3s host. It expects the amazon ecr setup i document in my tech-notes repo
+
+![screenshot](/screenshots/dani-web.png "Dani website container deployed")
