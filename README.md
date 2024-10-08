@@ -10,3 +10,6 @@ When I am doing some quick testing with Kubernetes or Docker I often need a smal
 - update build_and_push_to_ecr.sh with the container name and region you want
 - create your private ECR repo in the AWS ECR console
 - run build_and_push_to_ecr.sh to build the docker container and push it to ECR
+
+### Kubernetes Deploy
+- k3s/kubectl-apply.sh is a simple deployment aimed at a k3s host. It expects the amazon ecr setup i document in my tech-notes repo
