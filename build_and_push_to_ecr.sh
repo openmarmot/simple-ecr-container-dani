@@ -18,7 +18,7 @@ container_tag=$(date +%b-%d-%Y-%k-%M)
 
 cd docker
 
-aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin ${aws_account}.dkr.ecr.${aws_region}.amazonaws.com
+aws ecr get-login-password --region ${aws_region} | docker login --username AWS --password-stdin ${aws_account}.dkr.ecr.${aws_region}.amazonaws.com
 
 docker build -t ${container_name} .
 
