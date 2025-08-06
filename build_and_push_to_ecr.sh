@@ -10,7 +10,7 @@ set -e
 # -- variables --
 #aws account number
 aws_account="$(aws sts get-caller-identity --query Account --output text)"
-aws_region="us-west-2"
+aws_region="$(aws configure get region)"
 container_name="dani.openmarmot.com"
 container_tag=$(date +%b-%d-%Y-%k-%M)
 

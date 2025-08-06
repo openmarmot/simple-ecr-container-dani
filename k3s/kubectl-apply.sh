@@ -2,14 +2,13 @@
 
 # Deploy to kubernetes from ECR
 # andrew@openmarmot.com
-# last update : Oct 2024
 
 set -e
 
 # -- variables --
 #aws account number
 aws_account="$(aws sts get-caller-identity --query Account --output text)"
-aws_region="us-west-2"
+aws_region="$(aws configure get region)"
 container_name="dani.openmarmot.com"
 kubernetes_name="dani-openmarmot-com"
 read -p "Enter the container tag: " container_tag
